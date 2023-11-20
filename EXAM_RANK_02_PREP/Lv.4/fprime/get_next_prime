@@ -1,0 +1,22 @@
+
+int get_next_prime_number(factor)
+{
+		
+}
+
+
+function(number)
+{
+	int factor = 2;
+	if number is 1 just print 1
+		end
+	
+	while number is bigger than= 2 do
+		if number modulo factor = 0 
+			print factor and *
+			number = number / factor
+		else 
+			factor = get_next_prime_number(factor);
+}
+	
+
