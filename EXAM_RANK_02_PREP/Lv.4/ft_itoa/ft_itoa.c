@@ -51,3 +51,11 @@ char    *ft_itoa(int nbr)
     }
     return (result);
 }
+
+#include <stdio.h>
+int main()
+{
+    int i = 69;
+    char *a = ft_itoa(i);
+    printf("%s\n", a);
+}
