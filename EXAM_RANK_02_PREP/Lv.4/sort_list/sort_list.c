@@ -9,7 +9,7 @@ t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
 		a = tmp->data;
 		b = tmp->next->data;
 		result = (*cmp)(a, b);
-		if (result != 0)
+		if (result == 0)
 		{
 			int	buf = a;
 			a = b;
