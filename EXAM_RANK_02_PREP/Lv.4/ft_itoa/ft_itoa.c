@@ -2,14 +2,13 @@
 
 char    re(int num, char *base)
 {
-    if (num >= 10)
-        re(num / 10, base);
+    /*if (num >= 10)
+        re(num / 10, base);*/
     return (base[num % 10]);
 }
 
 char    *ft_itoa(int nbr)
 {
-    int i = 0;
     int len = 0;
     int min = 0;
     int nbr_cpy = nbr;
@@ -34,7 +33,6 @@ char    *ft_itoa(int nbr)
     if (min == 1)
         {
             result[0] = '-';
-            i++;
             while (--len > 0)
             {
                 result[len] = re(nbr_cpy, "0123456789");
