@@ -25,7 +25,7 @@ int main(int argc, char **argv)
         while (is_space(argv[1][i]) == 1)
             i++;
         while (argv[1][i])
-        {       
+        {     //flag = 0;
             while (is_space(argv[1][i]) == 1 && is_space(argv[1][i + 1]) == 1)
                 i++;
             if (is_space(argv[1][i]) == 1)
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
             write(1, &argv[1][i], 1);
             i++;
         }
-        if (!flag)
+        if (flag)
             write(1, " ", 1);
         while (start < end)
         {
